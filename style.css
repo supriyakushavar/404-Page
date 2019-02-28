@@ -15,8 +15,28 @@ body{
 
 .content-left{
     width: 40%;
+    height: 500px;
 }
 
-.content-right{
+.content-left img{
+    animation-play-state: paused; 
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
 
+.content-left img:hover{
+    animation-play-state: running;
+}
+
+@keyframes example {
+    from {margin: 0;}
+    to {margin: 0 40px 0 0;}
+  }
+
+.content-right{
+   border: 1px solid #000;
+   border-radius: 35px;
+   padding: 20px;
 }
